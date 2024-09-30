@@ -17,4 +17,3 @@ create table notas(
     data_criacao date,
     categoria varchar(100)
 );
-
