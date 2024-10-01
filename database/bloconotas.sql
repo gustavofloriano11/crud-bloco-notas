@@ -17,3 +17,9 @@ create table notas(
     data_criacao date,
     categoria varchar(100)
 );
+
+insert into usuario
+values(1, 'isa', 'eu@gmail.com');
+
+insert into notas
+values(1, 1, 'uau', 'muito legal essa aula', '2023-12-11', 'coisas joias');

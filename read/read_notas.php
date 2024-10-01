@@ -37,8 +37,8 @@
                 <td> <?php echo $row['categoria'];?> </td>
                 <td> <?php echo $row['data_criacao'];?> </td>
                 <td> 
-                    <a href='../update/update_usuario.php?id_usuario=<?php echo $row['id_usuario']?>'>Editar</a> |
-                    <a href='../delete/delete_usuario.php?id_usuario=<?php echo $row['id_usuario']?>'>Excluir</a>
+                    <a href='../update/update_notas.php?id_notas=<?php echo $row['id_notas']?>'>Editar</a> |
+                    <a href='../delete/delete_notas.php?id_notas=<?php echo $row['id_notas']?>'>Excluir</a>
                 </td>
             </tr>
 <?php   }
@@ -54,7 +54,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usuários Registrados</title>
+    <title>Notas Registrados</title>
 </head>
 <body>
     <br>
