@@ -24,7 +24,7 @@
                 <td> 
                     <a href='../read/read_notas.php?id_usuario=<?php echo $row['id_usuario']?>'>Ver notas</a> |
                     <a href='../update/update_usuario.php?id_usuario=<?php echo $row['id_usuario']?>'>Editar</a>|
-                    <a href='../delete/delete_usuario.php?id_usuario=<?php echo $row['id_usuario']?>'>Excluir</a>
+                    <a href='../delete/delete.php?id_usuario=<?php echo $row['id_usuario']?>'>Excluir</a>
                 </td>
             </tr>
 <?php   }
