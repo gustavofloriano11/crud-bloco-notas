@@ -38,7 +38,7 @@
                 <td> <?php echo $row['data_criacao'];?> </td>
                 <td> 
                     <a href='../update/update_notas.php?id_notas=<?php echo $row['id_notas']?>'>Editar</a> |
-                    <a href='../delete/delete.php?id_notas=<?php echo $row['id_notas']?>'>Excluir</a>
+                    <a href='../delete/delete_notas.php?id_notas=<?php echo $row['id_notas']?>'>Excluir</a>
                 </td>
             </tr>
 <?php   }
@@ -58,6 +58,7 @@
 </head>
 <body>
     <br>
+    <a href="../create/create_notas.php"><button>Registrar Notas</button></a>
     <a href="../index.html"> <button class = "menu"> Menu </button></a>
 </body>
 </html>

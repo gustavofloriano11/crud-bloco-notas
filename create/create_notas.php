@@ -8,7 +8,7 @@ include "../database/db.php";
         $data = $_POST['data_criacao'];
         $categoria = $_POST['categoria'];
 
-        $sql = "INSERT INTO notas(fk_usuario, titulo, conteudo, data_criacao, categoria)";
+        $sql = "INSERT INTO notas(fk_usuario, titulo, conteudo, data_criacao, categoria) VALUES ('$id_usuario', '$titulo', '$conteudo', '$data', '$categoria')";
 
         if($conn -> query($sql) === TRUE) {
             echo "Novo registro criado com sucesso";
@@ -33,9 +33,9 @@ include "../database/db.php";
         Título: <input type="text" name="titulo" required>
         Conteudo: <input type="text" name="conteudo" required>
         Data de Criação: <input type="date" name="data_criacao" required>
-        Categoria: <input type="text" name="categoia" required>
+        Categoria: <input type="text" name="categoria" required>
         <input type="Submit" name="create_notas" value="Adicionar">
     </form>
-
+    <a href="../index.html"><button>Menu</button></a>
  </body>
  </html>
