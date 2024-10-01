@@ -5,7 +5,7 @@ include '../database/db.php';
         $nome = $_POST['nome'];
         $email = $_POST['email'];
 
-        $sql = "INSERT INTO usuario (nome, email) values ('$name', '$email')";
+        $sql = "INSERT INTO usuario (nome, email) values ('$nome', '$email')";
 
 
         if($conn -> query($sql) === TRUE) {
@@ -31,5 +31,6 @@ include '../database/db.php';
         Email: <input type="text" name="email" required> 
         <input type="submit" name="create_usuario" value="Adicionar">
     </form>
+    <a href="../index.html"><button>Menu</button></a>
 </body>
 </html>
